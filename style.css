@@ -18,3 +18,8 @@ body {
   justify-content: space-around;
 }
 
+h1{
+  color:pink;
+  font-style:italic;
+  font-size: 30px;
+}
