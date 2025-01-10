@@ -10,6 +10,9 @@ var Size = 10;
 
 var SizeX = 40;
 
+var circleX= 40;
+var circleY= 40;
+
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -24,7 +27,7 @@ draw = function(){
   //🎯Animation Code Goes Here
  // rect(fireworkX, 15, 10, 10);
   fill(230,149,185)
-  ellipse(80,leftX,20,20)
+  ellipse(circleX,leftX,20,circleY)
   fill(230,207,217)
   ellipse(250,leftX,10,10)
   fill(230,149,185)
@@ -54,7 +57,7 @@ draw = function(){
 leftX= leftX+1;
 Size= Size+.1;
 SizeX= SizeX -1;
-
+circleX= circleX+1
 }
 
 
@@ -70,4 +73,7 @@ showXYPositions = function(){
     fill(255,0,255)
     ellipse(mouseX, mouseY, 10, 10);
     fill(255,255,255)
+    
+    circleX= mouseX
+    circleY= mouseY
 }
