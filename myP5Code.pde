@@ -4,7 +4,15 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+var leftX = 150;
+
+var Size = 10;
+
+var SizeX = 40;
+
+var circleX= 40;
+var circleY= 40;
+
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -17,11 +25,41 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
-  
-  fireworkX = fireworkX + 1;
+ // rect(fireworkX, 15, 10, 10);
+  fill(230,149,185)
+  ellipse(circleX,leftX,20,circleY)
+  fill(230,207,217)
+  ellipse(250,leftX,10,10)
+  fill(230,149,185)
+  ellipse(300,leftX,20,20)
+ fill(230,207,217)
+ fill(243,107,211)
+  ellipse(160,leftX,SizeX,SizeX)
+  fill(230,149,185)
+  ellipse(215,leftX,20,20)
+   fill(230,149,185)
+  rect(260,leftX,Size,Size)
+   fill(230,149,185)
+  rect(180,leftX,Size,Size)
+   fill(230,207,217)
+  rect(130,leftX,Size,Size)
+    fill(230,207,217)
+  ellipse(330,leftX,10,10)
+   fill(230,149,185)
+ triangle(346,leftX,364,leftX,379,leftX-10)
+ fill(243,107,211)
+  ellipse(235,leftX,SizeX,SizeX)
+  fill(243,107,211)
+  ellipse(300,leftX,SizeX,SizeX)
+ 
 
+// ellipse()
+leftX= leftX+1;
+Size= Size+.1;
+SizeX= SizeX -1;
+circleX= circleX+1
 }
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
@@ -35,4 +73,7 @@ showXYPositions = function(){
     fill(255,0,255)
     ellipse(mouseX, mouseY, 10, 10);
     fill(255,255,255)
+    
+    circleX= mouseX
+    circleY= mouseY
 }

@@ -6,8 +6,8 @@ body {
 
 
 #myCanvas {
-  background-image: url("https://images.pexels.com/photos/1387577/pexels-photo-1387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: 400px;
+  background-image: url("https://www.shutterstock.com/image-vector/cherry-blossom-tree-isolated-on-600nw-2283350531.jpg");
+  background-size: 550px;
   border-radius: 30px;
   border: 1px solid rgb(255,245,227);
 }
@@ -18,3 +18,8 @@ body {
   justify-content: space-around;
 }
 
+h1{
+  color:pink;
+  font-style:italic;
+  font-size: 30px;
+}
